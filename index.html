@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Ahorcado</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./imagenes/aluraLogo.png" type="image/icon type">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <header>
+        <img src="./imagenes/logo.png" alt="Logo Alura" class="logo">
+    </header>
+
+    <body>
+        <main>
+            <section class="inicio" id="inicio">
+                <input type="submit" value="Iniciar Juego" name="iniciar" id="iniciar" class="btnIniciar">
+                <input type="submit" value="Nueva Palabra" name="nuevaPalabra" id="nuevaPalabra" class="btnNuevaPalabra">
+            </section>
+           
+            <section class="ingresoPalabra" id="ingresoPalabra">
+                <textarea name="text" id="ingresarPalabra" class="ingresarPalabra" cols="50" rows="5" placeholder="Ingresar Palabra."></textarea>
+                <section class="botones">
+                    <p><span class="iconify" data-icon="bi:exclamation-circle-fill"></span> Máx. de 8 letras. Sólo letras mayúsculas, sin acentos ni caracteres especiales.</p>
+                    <input type="submit" value="Guardar y comenzar" name="guardar" id="guardar" class="btnGuardar">
+                    <input type="submit" value="Cancelar" name="cancelar" id="cancelar" class="btnCancelar">
+                </section>
+            </section>
+
+            <section class="juego" id="juego">
+
+                <canvas width="800" height="450"></canvas>
+                <div class="teclado" id="teclado">
+                    <div class="superior" id="superior"></div>
+                    <div class="medio" id="medio"></div>
+                    <div class="inferior" id="inferior"></div>
+                </div>
+                <section class="botones">
+                    <input type="submit" value="Nuevo Juego" name="nuevoJuego" id="nuevoJuego" class="btnNuevoJuego">
+                    <input type="submit" value="Desistir" name="desistir" id="desistir" class="btnDesistir">
+                </section>
+            </section>
+
+        </main>
+        <footer>
+            <footer>
+                <p>Realizado por Matías Olveira - Challenge: Juego del Ahorcado - Programa Oracle, Next Education</p> 
+                <p><span class="iconify" data-icon="akar-icons:github-fill"></span> <a id="github" href="https://github.com/MatiasOlve" target="_blank">MatiasOlve</a> - <span class="iconify" data-icon="akar-icons:linkedin-box-fill"></span> <a id="linkedin" href="https://www.linkedin.com/in/matiasolveira/" target="_blank">Matias Olveira</a></p>
+            </footer>
+        </footer>
+
+        <script src="funciones.js"></script>
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    </body>
+        
+</html>
